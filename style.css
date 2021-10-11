@@ -1,0 +1,60 @@
+body {
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+}
+
+#container {
+  padding: 100px;
+  transition: background-color 2s;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Alegreya Sans SC';
+  font-weight: 500;
+  transition: color 2s;
+  margin: 0 auto;
+  color: black;
+  width: auto;
+  text-align: center;
+}
+
+input {
+  display: none;
+}
+
+label {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid rgb(134, 132, 132);
+  border-top: 1px solid rgb(134, 132, 132);
+  border-radius: 5px;
+  height: 52px;
+  width: 52px;
+  margin: 1px;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  background-image: url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/50/000000/external-moon-weather-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png');
+}
+
+/*toggling switch*/
+#switch:checked ~ label{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  background-image: url('https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/50/000000/external-sun-spring-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png');
+}
+
+#switch:checked ~ #container{
+  transition: background-color 2s;
+  background-color: rgb(43, 40, 40);
+}
+
+#switch:checked ~ #container > h1{
+  transition: color 2s;
+  color: white;
+}
