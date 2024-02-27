@@ -51,7 +51,7 @@ label {
 
 #switch:checked ~ #container{
   transition: background-color 2s;
-  background-color: rgb(43, 40, 40);
+  background-color: rgb(240, 69, 69);
 }
 
 #switch:checked ~ #container > h1{
